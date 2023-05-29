@@ -139,15 +139,19 @@ Console.WriteLine(d);
 
 Console.ReadKey();
 
+double sum_distant = distant;
 
-while (distant < 100)
+while (sum_distant < 100)
 {
-    distant = distant + distant * 0.05;
+    distant += distant * 0.05;
+
+    sum_distant += distant;
+
+    Console.WriteLine(sum_distant);
 
     d++;
-
 }
-Console.WriteLine(d);
+
 Console.ReadKey();
 
 int fac = Convert.ToInt32(Console.ReadLine());
